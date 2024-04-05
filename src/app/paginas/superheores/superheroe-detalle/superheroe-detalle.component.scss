@@ -1,0 +1,57 @@
+ion-col {
+  display: flex;
+  justify-content: space-between;
+  --ion-grid-column-padding: 30px;
+}
+
+ion-card-header {
+  border-bottom: 1px solid #ccc;
+  margin-inline: 10px;
+}
+
+.imagen {
+  width: 100%; /* La imagen ocupará el 100% del ancho disponible */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción de la imagen */
+  margin: 0 auto;
+}
+
+/* pantallas muy pequeñas (smartphones en posición vertical) */
+@media (max-width: 479px) {
+  .imagen {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* pantallas pequeñas (smartphones en posición horizontal y tablets en posición vertical) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .imagen {
+    max-width: 70%;
+    height: auto;
+  }
+}
+
+/* pantallas medianas (tablets en posición horizontal y pantallas de escritorio pequeñas) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .imagen {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
+/* pantallas grandes (escritorios medianos y grandes) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .imagen {
+    max-width: 50%;
+    height: auto;
+  }
+}
+
+/* pantallas muy grandes (escritorios muy grandes y pantallas de alta resolución) */
+@media (min-width: 1200px) {
+  .imagen {
+    max-width: 40%;
+    height: auto;
+  }
+}
+

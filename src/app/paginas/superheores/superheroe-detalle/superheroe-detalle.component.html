@@ -1,0 +1,48 @@
+<app-cabecera [titulo]="superheroe?.name" [ocultarRegresar]=false></app-cabecera>
+<ion-content>
+  <ion-card class="custom-card">
+    <ion-card-header>
+      <ion-card-title class="title">
+        <ion-img [src]="superheroe?.picture" class="imagen"></ion-img>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-text color="primary">
+              <h2>{{'other_information' | translate}}</h2>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" size-lg="4" size-md="6" size-sm="12" >
+            <ion-text color="primary">
+              <p>{{'comics_available' | translate}}:</p>
+            </ion-text>
+            <ion-text>
+              <i>{{superheroe?.aditionalInformation?.comicsAvailable}}</i>
+            </ion-text>
+          </ion-col>
+          <ion-col size="12" size-lg="4" size-md="6" size-sm="12">
+            <ion-text color="primary">
+              <p>{{'series_available' | translate}}:</p>
+            </ion-text>
+            <ion-text>
+              <i>{{superheroe?.aditionalInformation?.seriesAvailable}}</i>
+            </ion-text>
+          </ion-col>
+          <ion-col size="12" size-lg="4" size-md="6" size-sm="12">
+            <ion-text color="primary">
+              <p>{{'stories_available' | translate}}:</p>
+            </ion-text>
+            <ion-text>
+              <i>{{superheroe?.aditionalInformation?.storiesAvailable}}</i>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

@@ -1,0 +1,20 @@
+<ion-list>
+  <ion-item lines="none">
+    <ion-label >
+      <ion-card class="custom-card" (click)="ver()">
+        <ion-card-header>
+          <ion-card-title class="title">
+            <ion-avatar class="foto-avatar" name="foto" id="foto">
+              <ion-img [src]="superheroe?.picture"></ion-img>
+            </ion-avatar>
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p class="ion-text-medium">
+            {{superheroe?.name}}
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-label>
+  </ion-item>
+</ion-list>

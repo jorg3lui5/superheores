@@ -1,0 +1,10 @@
+<app-cabecera [titulo]="'title_superheroes_list' | translate" [ocultarRegresar]=true></app-cabecera>
+<ion-content>
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12" *ngFor="let superheroe of superheroes">
+      <app-item-superheroe [superheroe]="superheroe"></app-item-superheroe>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
