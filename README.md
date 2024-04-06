@@ -11,3 +11,4 @@ Esta api se implementó con las siguientes versiones:
 - node: v20.12.1
 - ionic: 7.2.0 . Sin embargo la app usa las caracteríticas de ionic 5.
 - npm: 10.5.0
+- capacitor: 5.7.4
